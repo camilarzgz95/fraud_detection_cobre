@@ -12,8 +12,7 @@ fraud_project_github/
 ├── notebooks/
 │   ├── fraud_pipeline_completo_umbral.ipynb
 │   └── fraud_pipeline_resumen.ipynb
-├── run.py                <- Script para reconstruir df_merged y mostrar resumen
-├── requirements.txt      <- Dependencias necesarias
+├── requirements.txt
 └── README.md
 ```
 
@@ -25,42 +24,25 @@ fraud_project_github/
 pip install -r requirements.txt
 ```
 
-2. Ejecuta `notebooks/fraud_pipeline_completo_umbral.ipynb` para cargar y procesar los datos.
-   - Este notebook genera los siguientes archivos en `data/generado/`:
-     - `tabla_1_inicial.csv`
-     - `tabla_2_validaciones.csv`
-     - `tabla_3_reglas.csv`
-     - `tabla_output_clientes.csv`
-
-3. Puedes usar el script rápido para reconstruir el dataset y obtener un resumen:
+2. Ejecuta manualmente el notebook principal:
 
 ```bash
-python run.py
+notebooks/fraud_pipeline_completo_umbral.ipynb
 ```
 
-Esto cargará los datos y mostrará insights clave en consola.
+Este notebook genera los siguientes archivos en `data/generado/`:
+- `tabla_1_inicial.csv`
+- `tabla_2_validaciones.csv`
+- `tabla_3_reglas.csv`
+- `tabla_output_clientes.csv`
 
-4. Luego, ejecuta `notebooks/fraud_pipeline_resumen.ipynb`.
-   - Este notebook lee los archivos generados.
-   - Incluye visualizaciones, insights y explicación de los factores de riesgo.
-
-## ✅ Requisitos
-
-- Python 3.x
-- pandas
-- matplotlib
-- seaborn
-- jupyter (opcional para ejecutar notebooks)
-
-Instalación rápida:
+3. Luego, ejecuta el notebook de resumen:
 
 ```bash
-pip install -r requirements.txt
+notebooks/fraud_pipeline_resumen.ipynb
 ```
 
----
-
-
+Este notebook reconstruye `df_merged` desde las tablas generadas e incluye visualizaciones, insights y explicación de los factores de riesgo.
 
 ---
 
