@@ -57,3 +57,16 @@ Instalación rápida:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+
+
+---
+
+## 📥 Archivos originales
+
+Los archivos originales no están incluidos por su tamaño.
+
+Por favor, descárgalos manualmente desde [Kaggle IEEE Fraud Detection](https://www.kaggle.com/competitions/ieee-fraud-detection/data)  
+y colócalos en `data/original/` antes de ejecutar el pipeline.
